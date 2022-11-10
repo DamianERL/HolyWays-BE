@@ -7,7 +7,7 @@ import (
 )
 
 type TransactionRepository interface {
-	FindTransactions(ID int) (models.Transaction, error)
+	FindTransactions(ID int) ([]models.Transaction, error)
 	GetTransaction(ID int) (models.Transaction, error)
 	CreateTransaction(transaction models.Transaction) (models.Transaction, error)
 
