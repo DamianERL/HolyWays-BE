@@ -8,6 +8,7 @@ require (
 	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/gorilla/mux v1.8.0
 	github.com/joho/godotenv v1.4.0
+	github.com/midtrans/midtrans-go v1.3.6
 	golang.org/x/crypto v0.2.0
 	gorm.io/driver/mysql v1.4.3
 	gorm.io/gorm v1.24.1
