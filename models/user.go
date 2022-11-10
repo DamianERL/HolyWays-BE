@@ -9,8 +9,8 @@ type User struct {
 	Password     string        `json:"password" gorm:"type: varchar(255)"`
 	Phone        string        `json:"phone" gorm:"type: varchar(255)"`
 	Image        string        `json:"image" gorm:"type:varchar(255)"`
-	Transactions []Transaction `json:"transactions"`
-	Funds        []Fund        `json:"fund"`
+	Transactions []Transaction `json:"transactions" gorm:"constraint:OnUpdate:CASCADE,OnDelete:CASCADE;" `
+	Funds        []Fund        `json:"fund" gorm:"constraint:OnUpdate:CASCADE,OnDelete:CASCADE;" `
 	CreatedAt    time.Time     `json:"-"`
 	UpdatedAt    time.Time     `json:"-"`
 }
